@@ -25,6 +25,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Wox.Plugin/1.3.159": {
+        "type": "package",
+        "compile": {
+          "lib/net452/Wox.Plugin.dll": {}
+        },
+        "runtime": {
+          "lib/net452/Wox.Plugin.dll": {}
+        }
       }
     }
   },
@@ -172,11 +181,24 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Wox.Plugin/1.3.159": {
+      "sha512": "4Ij68AbFC0DzcRZQ2rVNFYdgobhLD/9kINtcBs8zMfZ1m2g/EUy3kr1cBtWTF3JnaNanZue9Bm4PwBZ0YvYmMA==",
+      "type": "package",
+      "path": "wox.plugin/1.3.159",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Wox.Plugin.dll",
+        "wox.plugin.1.3.159.nupkg.sha512",
+        "wox.plugin.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Wox.Plugin >= 1.3.159"
     ]
   },
   "packageFolders": {
@@ -219,6 +241,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Wox.Plugin": {
+            "target": "Package",
+            "version": "[1.3.159, )"
           }
         },
         "imports": [
@@ -234,5 +260,17 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Wox.Plugin 1.3.159' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Wox.Plugin",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
