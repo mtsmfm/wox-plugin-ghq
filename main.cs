@@ -46,8 +46,8 @@ namespace app
                 }
             });
 
-            if (results.Count() == 0) {
-                return new List<Result> {
+            results = results.Concat(
+                new [] {
                     new Result() {
                         Title = $"Get {query.FirstSearch}",
                         IcoPath = "logo.png",
@@ -70,10 +70,10 @@ namespace app
                             return true;
                         }
                     }
-                };
-            } else {
-                return results.ToList();
-            }
+                }
+            );
+
+            return results.ToList();
         }
 
         private string runGhq(string command) {
