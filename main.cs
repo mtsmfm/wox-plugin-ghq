@@ -47,17 +47,30 @@ namespace app
             });
 
             if (results.Count() == 0) {
-                return new List<Result> {new Result() {
-                    Title = $"Create {query.FirstSearch}",
-                    IcoPath = "logo.png",
-                    Action = e =>
-                    {
-                        var result = runGhq($"create {query.FirstSearch}");
-                        var dir = chompLines(result).Last();
-                        runCommand($"{this.settings.openCommand} {dir}");
-                        return true;
+                return new List<Result> {
+                    new Result() {
+                        Title = $"Get {query.FirstSearch}",
+                        IcoPath = "logo.png",
+                        Action = e =>
+                        {
+                            runGhq($"get {query.FirstSearch}");
+                            var dir = chompLines(runGhq($"list -p {query.FirstSearch}")).First();
+                            runCommand($"{this.settings.openCommand} {dir}");
+                            return true;
+                        }
+                    },
+                    new Result() {
+                        Title = $"Create {query.FirstSearch}",
+                        IcoPath = "logo.png",
+                        Action = e =>
+                        {
+                            var result = runGhq($"create {query.FirstSearch}");
+                            var dir = chompLines(result).Last();
+                            runCommand($"{this.settings.openCommand} {dir}");
+                            return true;
+                        }
                     }
-                }};
+                };
             } else {
                 return results.ToList();
             }
