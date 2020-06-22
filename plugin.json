@@ -1,0 +1,12 @@
+{
+    "ID": "3642CC3B386D42BA80A2B2B0DADFF3AE",
+    "ActionKeyword": "ghq",
+    "Name": "ghq",
+    "Description": "Plugin for ghq",
+    "Author": "Fumiaki Matsushima",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/mtsmfm/wox-plugin-ghq",
+    "IcoPath": "logo.png",
+    "ExecuteFileName": "app.dll"
+}
