@@ -2,6 +2,8 @@
 
 Wox plugin for [ghq](https://github.com/x-motemen/ghq)
 
+![](demo.png)
+
 ## Install
 
 1. Download wox-plugin-ghq.wox from https://github.com/mtsmfm/wox-plugin-ghq/releases
