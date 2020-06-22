@@ -6,7 +6,7 @@ Wox plugin for [ghq](https://github.com/x-motemen/ghq)
 
 You can find setting file in C:\Users\USERNAME\Documents\wox-plugin-ghq.json.
 
-```json
+```jsonc
 {
     "shell": "wsl.exe", // or like "cmd.exe"
     "ghqCommand": "/home/foo/.bin/ghq", // Path to ghq
