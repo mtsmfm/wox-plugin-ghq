@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+pf2VfjkEncgYgHBkmiMwFUuRg4SZfdtGZhwp5Oz5bgIXmO9clUn/Wg4RFcHNv4n9GLM1q1JoZqCm6v5/47OpA==",
+  "dgSpecHash": "0zeqUIga5CNZfS4NQ7uNfFA3FIji5SkRUVjLNtsErmZvp0nus0DWaSEcTgwOvAv+QR76c4vLhUghZFwE9h3oPQ==",
   "success": true,
   "projectFilePath": "/app/app.csproj",
   "expectedPackageFiles": [
     "/home/app/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/app/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/home/app/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/home/app/.nuget/packages/wox.plugin/1.3.159/wox.plugin.1.3.159.nupkg.sha512"
   ],
   "logs": [
